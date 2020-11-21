@@ -1,0 +1,11 @@
+To schedule this to run automatically at a certain time on your system with cron (Mac/Linux have this built in), here's how to set it up:
+
+I like to use the nano editor, so I use the following command:
+
+EDITOR=nano crontab -e
+
+And then, I add the following:
+
+00 08 * * * cd /Users/me/project && python3 /Users/me/project/notify.py command arg
+
+This goes minutes, then hours, so it runs at 8 each morning...it changes directory to the project and then executes the script.

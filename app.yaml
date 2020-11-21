@@ -1,0 +1,8 @@
+runtime: python38
+
+env_variables:
+    SMTP_SRV: 'your_smtp_server'
+    SMTP_USER: 'your_username'
+    SMTP_PASS: ''
+    EMAIL_T: 'to@example.com'
+    EMAIL_F: 'from@example.com'
